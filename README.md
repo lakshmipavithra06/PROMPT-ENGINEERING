@@ -5,6 +5,7 @@ Develop a comprehensive report for the following exercises:
 2.	Focusing on Generative AI architectures. (like transformers).
 3.	Generative AI applications.
 4.	Generative AI impact of scaling in LLMs.
+5. Explain about LLM and how it is built
 
 # Algorithm: Step 1: Define Scope and Objectives
 1.1 Identify the goal of the report (e.g., educational, research, tech overview)
@@ -223,6 +224,7 @@ Major Architectures Used in Generative AI
 Generative AI uses different architectures to learn patterns from existing data and generate new content. The four major architectures are Transformers, Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.
 
 <img width="756" height="802" alt="image" src="https://github.com/user-attachments/assets/e2848b08-996e-4bd1-a046-84ff2daa0eae" />
+
 1. Transformers
    - Transformers are deep learning architectures mainly used to process sequential data such as text.
 - They use a mechanism called Self-Attention to understand the relationship between different words in a sentence.
@@ -375,6 +377,7 @@ User Prompt: "Create a soft romantic song with piano music and female vocals."
 Generated Output: Suno AI generates a song with a suitable melody, background music and vocals.
 
 How output is produced:
+
 <img width="961" height="367" alt="image" src="https://github.com/user-attachments/assets/94eade27-2d51-4d08-9b47-3765778f334f" />
 
 ## Gemini Response
@@ -466,6 +469,157 @@ Resource Bottlenecks: Escalates hardware expenses, server infrastructure costs, 
 
 Hallucinations & Bias: Retains risks of confidently generating false data or amplifying hidden internet biases
 
+## 5. Explain about LLM and how it is built
+
+Prompt Type: Experiential Perspective Prompt
+
+Imagine you are an AI engineer responsible for building a Large Language Model (LLM) from the beginning. Explain the complete process as if you are describing your own experience. Include data collection, data preprocessing, tokenization, model architecture, training, fine-tuning, evaluation, and deployment. Explain the purpose of each stage using simple language and practical examples.
+
+## ChatGPT Response
+
+Building a Large Language Model (LLM) from Scratch
+As an AI engineer, I would follow several steps to develop a Large Language Model (LLM). An LLM is an AI model trained using large amounts of text data to understand human language and generate meaningful responses.
+
+The complete development process involves the following stages.
+1. Data Collection
+First, I would collect a large amount of text data from different sources.
+- Collect data from books, websites, articles, research papers and documents.
+- Ensure that the data is relevant and useful.
+- Collect data from different topics to improve the model's knowledge.
+Example: Collecting English articles, programming tutorials and educational books to build an educational chatbot.
+2. Data Preprocessing
+After collecting data, I would clean and organize it before training.
+- Remove duplicate information.
+- Correct formatting errors.
+- Remove unnecessary symbols and unwanted content.
+- Handle missing or incorrect data.
+Purpose: To improve the quality of training data.
+
+Example: Removing repeated paragraphs and unwanted advertisements from collected websites.
+3. Tokenization
+Next, I would convert the cleaned text into smaller units called tokens.
+- A token can be a word, part of a word or a symbol.
+- Each token is assigned a numerical ID.
+- These numerical values are given to the AI model as input.
+Example:
+
+Text: I love Artificial Intelligence
+
+Tokens: [I, love, Artificial, Intelligence]
+
+The tokenizer converts these tokens into numerical IDs.
+
+Purpose: Helps the model process human language mathematically.
+4. Model Architecture
+Next, I would select a suitable neural network architecture.
+- I would choose the Transformer architecture for a text-generating LLM.
+- It uses a mechanism called Self-Attention to understand relationships between words.
+- It helps the model understand context and generate meaningful responses.
+Example: When a user asks a question, the Transformer identifies important words and their relationships to understand the question.
+5. Model Training
+After designing the architecture, I would train the model using the prepared data.
+- Feed tokenized data into the model.
+- Allow the model to learn language patterns and relationships.
+- Predict the next token in a sequence.
+- Compare predictions with actual tokens and adjust model parameters to reduce errors.
+Example: If the input is "The sun rises in the", the model learns to predict the next token as "east".
+
+Purpose: To help the model learn language patterns and general knowledge.
+6. Fine-Tuning
+After basic training, I would fine-tune the model for specific tasks.
+- Train it using smaller, task-specific datasets.
+- Improve its ability to follow instructions.
+- Make its responses more useful and relevant.
+- Use human feedback where appropriate to improve response quality.
+Example: Fine-tuning a general LLM using educational question-and-answer data to create a college student assistant.
+7. Evaluation
+Next, I would test the model to check its performance.
+- Check the accuracy of generated answers.
+- Test its reasoning and problem-solving ability.
+- Check whether responses are relevant and meaningful.
+- Identify incorrect, biased or harmful outputs.
+- Measure response speed and reliability.
+Example: Asking the model 100 questions and checking how many answers are correct and useful.
+
+Purpose: To ensure that the model produces reliable and high-quality responses.
+8. Deployment
+Finally, I would make the trained model available to users.
+- Deploy the model on a cloud server or suitable local system.
+- Connect it to a website or mobile application using an API.
+- Allow users to enter prompts and receive responses.
+- Monitor performance and update the model when necessary.
+Example: Deploying the model as a chatbot on a college website to answer student questions.
+9. Overall Architecture / Workflow
+  
+  <img width="737" height="711" alt="image" src="https://github.com/user-attachments/assets/bda1af61-979a-4a89-a41c-7b8e31291642" />
+  
+10. Conclusion
+Building an LLM involves collecting data, cleaning it, converting it into tokens, designing the model, training, fine-tuning, evaluation and deployment. Each stage plays an important role in developing an effective language model. By following these steps, I can build an AI system that understands user instructions and generates meaningful responses.
+
+## Gemini Response
+
+Building a Large Language Model (LLM) from scratch is one of the most thrilling engineering challenges in tech. It feels less like writing traditional software and more like raising a digital mind.
+
+Here is what that journey looks like from my desk, walking through the eight critical phases of bringing an LLM to life.
+
+1. Data Collection: Scavenging the World's Knowledge
+Before teaching a model anything, we need raw material. We can't just feed it random internet text; we need petabytes of high-quality data.
+
+What we do: We crawl the web (using repositories like Common Crawl), ingest public books, scientific research papers (like arXiv), Wikipedia, and curated code repositories.
+
+Practical Example: Gathering billions of web pages. For instance, if you want your model to code well, you specifically target GitHub repositories; for logic, you collect textbooks and math papers.
+
+2. Data Preprocessing: Cleaning the Digital Noise
+Raw data is notoriously messy—it contains spam, hate speech, repetitive HTML tags, and corrupted characters that can ruin a model.
+
+What we do: We run automated cleaning pipelines to filter out junk, de-duplicate text, and strip out toxic content or personal identifiable information (PII).
+
+Practical Example: Removing a webpage that consists entirely of cookie banners, pop-up text, and repetitive spam keywords, while keeping an educational article on quantum physics intact.
+
+3. Tokenization: Breaking Text into Pieces
+Computers don't understand words; they understand numbers. Tokenization is how we bridge that gap.
+
+What we do: We use a tokenizer (like Byte-Pair Encoding) to break down text into smaller chunks called tokens (which can be whole words, syllables, or single characters) and map them to unique numbers.
+
+Practical Example: The sentence "Hello world!" might be split into tokens [15496, 2158, 0] in our model's vocabulary dictionary.
+
+4. Model Architecture: Designing the Digital Brain
+This is where we sketch out the neural network layout. Today, that almost always means building a Transformer Decoder architecture.
+
+What we do: We stack dozens of layers containing Self-Attention mechanisms and feed-forward networks, deciding how many parameters (weights) the model will have (e.g., 7 billion or 70 billion).
+
+Practical Example: Wiring up attention heads so that when the model reads the word "bank" in a sentence, it can dynamically check surrounding words to figure out if it means a river bank or a financial bank.
+
+5. Pre-Training: The Heavy Lifting (Next-Word Prediction)
+This is the most expensive and time-consuming phase. We hand the raw model to a massive cluster of GPUs and let it learn the patterns of human language.
+
+What we do: We train the model on a simple, massive task: predicting the next token across trillions of tokens.
+
+Practical Example: If we feed it the text "The cat sat on the...", the model guesses "mat". If it's wrong, we penalize it, update its internal weights, and repeat this process billions of times until its grammar, facts, and reasoning emerge.
+
+6. Fine-Tuning: Teaching It to Be an Assistant
+A pre-trained model is essentially a brilliant autocomplete engine—if you type "How do I bake a cake?", it might just reply with "Can I get a recipe?" instead of actually answering. Fine-tuning fixes this.
+
+Supervised Fine-Tuning (SFT): We train it on thousands of curated prompt-and-response pairs so it learns conversational etiquette.
+
+Alignment (RLHF/DPO): We use human feedback or preference optimization to teach it to be helpful, harmless, and honest.
+
+7. Evaluation: The Stress Test
+Before releasing our model, we need to know how smart, safe, and reliable it is.
+
+What we do: We run automated benchmark suites (like MMLU for general knowledge, GSM8K for math, and HumanEval for coding) and red-team it by trying to trick it into revealing biases or security flaws.
+
+Practical Example: Giving it a complex multi-step math problem to see if it hallucinates the answer or works through it logically.
+
+8. Deployment & Serving: Going Live
+The model is trained—now we need to make it accessible to users over the cloud without crashing under heavy traffic.
+
+What we do: We optimize the model using quantization (shrinking its memory footprint) and deploy it onto specialized inference servers with high-speed GPUs.
+
+Practical Example: Setting up an API endpoint where a user types a prompt into a chat interface, and our server streams back the generated tokens word-by-word in real-time.
+
+
+
 # Output:
 Comparison of ChatGPT and Gemini
 
@@ -474,6 +628,8 @@ Comparison of ChatGPT and Gemini
 ChatGPT provided more structured, detailed, and easy-to-understand explanations across the five exercises. Its responses were particularly useful for understanding technical concepts because of its step-by-step explanations and practical examples.
 
 Gemini also generated relevant responses and demonstrated good capabilities. However, ChatGPT was more suitable for my requirements because of its explanation style, organization, and clarity.
+
+
 
 
 # Result
