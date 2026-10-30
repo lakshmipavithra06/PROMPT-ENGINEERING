@@ -54,7 +54,7 @@ Step 7: Finalize and Export
 7.1 Format the report professionally
 7.2 Export as PDF or desired format
 7.3 Prepare a brief presentation if required (optional)
-## AITOOLS REQUIRED:
+## AI TOOLS REQUIRED:
 ChatGPT
 
 Gemini
