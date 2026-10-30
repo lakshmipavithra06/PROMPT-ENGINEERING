@@ -623,7 +623,8 @@ Practical Example: Setting up an API endpoint where a user types a prompt into a
 # Output:
 Comparison of ChatGPT and Gemini
 
-<img width="1022" height="435" alt="image" src="https://github.com/user-attachments/assets/e18df002-da12-4b68-85cd-c9f2b26d351c" />
+<img width="1923" height="818" alt="image" src="https://github.com/user-attachments/assets/0a46f81b-470a-4328-81d8-9f764aa63970" />
+
 
 ChatGPT provided more structured, detailed, and easy-to-understand explanations across the five exercises. Its responses were particularly useful for understanding technical concepts because of its step-by-step explanations and practical examples.
 
